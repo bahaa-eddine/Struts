@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<!DOCTYPE validators PUBLIC
+"-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+-->
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+
+<validators>
+    <field name="nom">
+        <field-validator type="requiredstring">
+            <message key="errors.required">Champ vide,le Nom est obligatoire</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="maxLength">30</param>
+            <message>le nom ne doit pas dépasser 30 caractères </message>
+        </field-validator>
+
+    </field>
+    <field name="prenom">
+        <field-validator type="requiredstring">
+            <message>Champ vide,le Prenom est obligatoire</message>
+
+
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="maxLength">30</param>
+            <message>le nom ne doit pas dépasser 30 caractères </message>
+        </field-validator>
+    </field>
+    <field name="numeroTelephone">
+        <field-validator type="requiredstring">
+            <message>Champ vide,le numero de telephone est obligatoire</message>
+
+
+        </field-validator>
+
+    </field>
+    <field name="adresse">
+        <field-validator type="requiredstring">
+            <message>Champ vide,l'adresse est obligatoire</message>
+        </field-validator>
+    </field>
+    <field name="pays">
+        <field-validator type="requiredstring">
+            <message>Champ vide,le pays est obligatoire</message>
+        </field-validator>
+    </field>
+    <field name="ville">
+        <field-validator type="requiredstring">
+            <message>Champ vide,la Ville est obligatoire</message>
+        </field-validator>
+    </field>
+    <field name="entrepriseOrganisme">
+        <field-validator type="requiredstring">
+            <message>Champ vide,l'Entreprise/Organisme est obligatoire</message>
+        </field-validator>
+    </field>
+    <field name="fonction">
+        <field-validator type="requiredstring">
+            <message>Champ vide,la fonction est obligatoire</message>
+        </field-validator>
+    </field>
+    <field name="email">
+        <field-validator type="requiredstring">
+            <message>Champ vide,l'email est obligatoire</message>
+        </field-validator>
+        <field-validator type="email">
+            <message>Insérer un email valide</message>
+
+
+        </field-validator>
+    </field>
+    <field name="age">
+        <field-validator type="int">
+            <param name="min">20</param>
+            <param name="max">50</param>
+            <message >votre âge doit être entre 20 et 50</message>
+        </field-validator>
+    </field>
+
+</validators>

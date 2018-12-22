@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<!DOCTYPE validators PUBLIC
+"-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+-->
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+
+<validators>
+    <field name="nom">
+        <field-validator type="requiredstring">
+            <message>Champ vide,le Nom est obligatoire</message>
+        </field-validator>
+
+    </field>
+    <field name="prenom">
+        <field-validator type="requiredstring">
+            <message>Champ vide,le Prenom est obligatoire</message>
+
+
+        </field-validator>
+    </field>
+    <field name="courriel">
+        <field-validator type="requiredstring">
+            <message>Champ vide,le Courriel est obligatoire</message>
+
+
+        </field-validator>
+        <field-validator type="email">
+            <message>Insérer un courriel valide</message>
+
+
+        </field-validator>
+    </field>
+    <field name="motDePasse">
+        <field-validator type="requiredstring">
+            <message>Champ vide,le mot de passe est obligatoire</message>
+        </field-validator>
+    </field>
+    <field name="confirmation">
+        <field-validator type="requiredstring">
+            <message>Champ vide,la Confirmation du mot de passe est obligatoire</message>
+        </field-validator>
+    </field>
+
+</validators>
